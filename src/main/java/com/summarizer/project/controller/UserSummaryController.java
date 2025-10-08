@@ -15,7 +15,7 @@ public class UserSummaryController {
     @Autowired
     private SummaryRepository summaryRepository;
 
-    // ✅ GET all summaries by userId and mode
+    //  GET all summaries by userId and mode
     @GetMapping("/by-mode")
     public ResponseEntity<?> getSummariesByUserIdAndMode(
             @RequestParam("userId") String userId,
